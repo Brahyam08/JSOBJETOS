@@ -161,3 +161,90 @@ let personas = {
     favoriteFruit: "strawberry",
   },
 };
+let nombre = window.prompt("Introduce el nombre a consultar:").toLowerCase();
+
+let parrafo = "";
+
+if (nombre === personas.BridgetteMcGuire.name.toLowerCase()) {
+  document.getElementById(
+    "patata"
+  ).innerHTML = `<div class="card" id="card"><img src="${personas.BridgetteMcGuire.picture}" alt="${personas.BridgetteMcGuire.name}" />
+  <div class="container">
+  <h1> ${personas.BridgetteMcGuire.name}</h1>
+  <p>${personas.BridgetteMcGuire.age}</p>
+  <p>${personas.BridgetteMcGuire.email}</p>
+  <p>${personas.BridgetteMcGuire.address}</p></div></div>`;
+
+  document.getElementById("card").style.backgroundColor =
+    personas.BridgetteMcGuire.eyeColor;
+} else if (nombre === personas.CraneHarris.name.toLowerCase()) {
+  document.getElementById(
+    "patata"
+  ).innerHTML = `<div class="card" id="card"><img src="${personas.CraneHarris.picture}" alt="${personas.CraneHarris.name}" />
+  <div class="container">
+  <h1> ${personas.CraneHarris.name}</h1>
+  <p>${personas.CraneHarris.age}</p>
+  <p>${personas.CraneHarris.email}</p>
+  <p>${personas.CraneHarris.address}</p></div></div>`;
+  document.getElementById("card").style.backgroundColor =
+    personas.CraneHarris.eyeColor;
+} else if (nombre === personas.EleanorStafford.name.toLowerCase()) {
+  document.getElementById(
+    "patata"
+  ).innerHTML = `<div class="card" id="card"><img src="${personas.EleanorStafford.picture}" alt="${personas.EleanorStafford.name}" />
+  <div class="container">
+  <h1> ${personas.EleanorStafford.name}</h1>
+  <p>${personas.EleanorStafford.age}</p>
+  <p>${personas.EleanorStafford.email}</p>
+  <p>${personas.EleanorStafford.address}</p></div></div>`;
+  document.getElementById("card").style.backgroundColor =
+    personas.EleanorStafford.eyeColor;
+} else if (nombre === personas.KimberleyRoberson.name.toLowerCase()) {
+  document.getElementById(
+    "patata"
+  ).innerHTML = `<div class="card" id="card"><img src="${personas.KimberleyRoberson.picture}" alt="${personas.KimberleyRoberson.name}" />
+  <div class="container">
+  <h1> ${personas.KimberleyRoberson.name}</h1>
+  <p>${personas.KimberleyRoberson.age}</p>
+  <p>${personas.KimberleyRoberson.email}</p>
+  <p>${personas.KimberleyRoberson.address}</p></div></div>`;
+  document.getElementById("card").style.backgroundColor =
+    personas.KimberleyRoberson.eyeColor;
+} else if (nombre === personas.TessaSellers.name.toLowerCase()) {
+  document.getElementById(
+    "patata"
+  ).innerHTML = `<div class="card" id="card"><img src="${personas.TessaSellers.picture}" alt="${personas.TessaSellers.name}" />
+  <div class="container">
+  <h1> ${personas.TessaSellers.name}</h1>
+  <p>${personas.TessaSellers.age}</p>
+  <p>${personas.TessaSellers.email}</p>
+  <p>${personas.TessaSellers.address}</p></div></div>`;
+  document.getElementById("card").style.backgroundColor =
+    personas.TessaSellers.eyeColor;
+} else if (nombre === personas.WardFulton.name.toLowerCase()) {
+  document.getElementById(
+    "patata"
+  ).innerHTML = `<div class="card" id="card"><img src="${personas.WardFulton.picture}" alt="${personas.WardFulton.name}" />
+  <div class="container">
+  <h1> ${personas.WardFulton.name}</h1>
+  <p>${personas.WardFulton.age}</p>
+  <p>${personas.WardFulton.email}</p>
+  <p>${personas.WardFulton.address}</p></div></div>`;
+  document.getElementById("card").style.backgroundColor =
+    personas.WardFulton.eyeColor;
+} else if (nombre === personas.melindawheeler.name.toLowerCase()) {
+  document.getElementById(
+    "patata"
+  ).innerHTML = `<div class="card" id="card"><img src="${personas.melindawheeler.picture}" alt="${personas.melindawheeler.name}" />
+  <div class="container">
+  <h1> ${personas.melindawheeler.name}</h1>
+  <p>${personas.melindawheeler.age}</p>
+  <p>${personas.melindawheeler.email}</p>
+  <p>${personas.melindawheeler.address}</p></div></div>`;
+  document.getElementById("card").style.backgroundColor =
+    personas.melindawheeler.eyeColor;
+} else {
+  document.getElementById(
+    "patata"
+  ).innerHTML = `<h1>No encontrado</h1> <p>La persona que busca, no está en nuestra base de datos</p>`;
+}

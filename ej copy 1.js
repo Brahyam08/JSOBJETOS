@@ -3,7 +3,7 @@ let coche = {
     marca: 'Ford',
     modelo: 'Focus',
     motor: {
-        cilidro: '4',
-        capacida: '2.2'
+        cilidros: '4',
+        capacidad: '2.2'
     }
 }

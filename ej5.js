@@ -1,9 +1,17 @@
-let nombre=window.prompt('dime tu nombre')
-let apellido=window.prompt('dime tu apellido')
-let fecha=parseInt(window.prompt('Dime tu Anyo de nacimiento'))
+let genero = window.prompt("Introduzca género (masculino o femenino)");
+let nombre = window.prompt("Introduzca nombre:");
+let letra1 = letraNombre[nombre.substring(0, 1).toLowerCase()][genero];
 
+let apellido = window.prompt("Introduzca apellido:");
+let letraapellido = apellido.substring(apellido.length - 1).toLowerCase();
+let letra2 = letraApellido[letraapellido][genero];
 
+let fecha = window.prompt("Introduzca su fecha de nacimiento:");
+let letrafecha = fecha.substring(fecha.length - 1).toLowerCase();
+let suma = "num" + letrafecha;
+let letra3 = fechaNacimiento[suma][genero];
 
+window.alert(`${letra1} ${letra2} ${letra3}`);
 let letraNombre = {
   a: {
     letra: "a",

@@ -1,4 +1,4 @@
-let nombre=window.prompt('Dime un nombre')
+let nombre = window.prompt('Dime un nombre')
 
 let randomObject = {
     halfway: -597578084,
@@ -133,5 +133,5 @@ let randomObject = {
 };
 
 console.log(randomObject.them.speed.past.program.grade.addition.whose.national.cannot.board)
-randomObject.them.speed.past.program.grade.addition.whose.national.cannot.name= `${nombre}`
+randomObject.them.speed.past.program.grade.addition.whose.national.cannot.name = `${nombre}`
 console.log(randomObject.them.speed.past.program.grade.addition.whose.national.cannot.name)
